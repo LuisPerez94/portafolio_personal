@@ -1,0 +1,19 @@
+import React from 'react';
+
+const NavigationMenu = () => (
+    <div className="navigation-menu__container">
+        <ul className="navigation-menu__nav">
+            <li>
+                Acerca de mi
+            </li>
+            <li>
+                Portafolio
+            </li>
+        </ul>
+        <div className="navigation-menu__contact-container">
+            <a href="mailto:luisemp9426@gmail.com">Contactame</a>
+        </div>
+    </div>
+);
+
+export default NavigationMenu;

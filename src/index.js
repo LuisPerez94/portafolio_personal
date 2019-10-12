@@ -4,11 +4,14 @@ import ReactDOM from "react-dom";
 import './styles/main.css';
 
 import IntroducingWidget from './components/IntroducingWidget';
+import NavigationMenu from './components/NavigationMenu';
 
 class Welcome extends React.Component {
   render() {
     return (
         <div className="main-container">
+            <div className="page-content__container">
+            <NavigationMenu />
             <IntroducingWidget
                 userImgSrc="https://avatars0.githubusercontent.com/u/9045933?s=400&u=b787b2d0003d66de33e4710846f511d322b2583d&v=4"
                 userName="Luis Pérez"
@@ -20,6 +23,20 @@ class Welcome extends React.Component {
                 instagramUrl="https://www.instagram.com/mimoperez/?hl=es-la"
                 stackoverflowUrl="https://es.stackoverflow.com/users/31409/luis?tab=profile"
             />
+
+            </div>
+            <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
         </div>
     );
   }

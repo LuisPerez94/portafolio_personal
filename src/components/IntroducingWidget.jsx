@@ -38,21 +38,21 @@ const IntroducingWidget = ({
         {youtubeUrl !== "" && (
           <li>
             <a rel="noopener noreferred" target="_blank" href={youtubeUrl} title="Youtube">
-                <i class="fab fa-youtube-square" />
+                <i className="fab fa-youtube-square" />
             </a>
           </li>
         )}
         {twitterUrl !== "" && (
           <li>
             <a rel="noopener noreferred" target="_blank" href={twitterUrl} title="Twitter">
-                <i class="fab fa-twitter-square" />
+                <i className="fab fa-twitter-square" />
             </a>
           </li>
         )}
         {instagramUrl !== "" && (
           <li>
             <a rel="noopener noreferred" target="_blank" href={instagramUrl} title="Instagram">
-                <i class="fab fa-instagram" />
+                <i className="fab fa-instagram" />
             </a>
           </li>
         )}
@@ -64,7 +64,7 @@ const IntroducingWidget = ({
               href={stackoverflowUrl}
               title="Stack OverFlow"
             >
-              <i class="fab fa-stack-overflow" />
+              <i className="fab fa-stack-overflow" />
             </a>
           </li>
         )}
