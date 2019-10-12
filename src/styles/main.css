@@ -12,12 +12,16 @@
     position: relative;
     background: #4e54c8;
     background: linear-gradient(to left, #5286a8, #232ab3);  
-    height: 100vh;
     width: 100%;
 }
 
+.main-container hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .page-content__container {
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 1;
 }
@@ -57,6 +61,125 @@
 }
 .navigation-menu__container a:hover {
     color: #ffc;
+}
+
+.about-me__container {
+    color: #FFF;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.portfolio-widget__container {
+    text-align: center;
+    color: #FFF;
+    margin: 25px 0;
+}
+.portfolio-widget__projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.portfolio-widget__projects-container .project-container {
+    flex: 1;
+    flex-basis: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.project-container__wrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-container__repo-name{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.project-container__repo-description {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 10px;    
+}
+
+.project-container__repo-demo-button {
+    padding: 10px;
+    width: 180px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+
+.project-container__repo-demo-button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.timeline__container {
+    padding: 25px 20%;
+}
+
+.timeline__section-container {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: rgba(255,255,255,.7);
+}
+
+.timeline__title {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 25px; 
+}
+
+.timeline__section-container-company {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.timeline__section-container-company small {
+    float: right;
+}
+.timeline__section-container-position {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.timeline__section-container-technologies-wrapper > p, .timeline__section-container-specialism-wrapper > p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.timeline__section-container-technologies-wrapper > div, .timeline__section-container-specialism-wrapper > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeline__section-container-technologies-wrapper > div > div, .timeline__section-container-specialism-wrapper > div > div {
+    flex: 1;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5px;
+    text-align: left;
+
 }
 .main-container .circles {
     position: absolute;
@@ -155,7 +278,7 @@
 }
 
 .introducingWidget__container {
-    padding: 50px 0px;
+    padding: 25px 0px;
     text-align: center;
 }
 
@@ -175,7 +298,7 @@
 }
 
 .introducingWidget__container .introducingWidget__social-media-container {
-    margin: 10px 0;
+    margin: 25px 0 0 0;
     text-align: center;
 }
 
@@ -199,7 +322,6 @@
     color: #181818;
     animation: bounce 1s;
 }
-
 
 @keyframes bounce {
     0%,
@@ -226,7 +348,7 @@
         }
     
         100%{
-            transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-2500px) rotate(720deg);
             opacity: 0;
             border-radius: 50%;
         }
@@ -236,10 +358,20 @@
     /** MEDIA QUERIES **/
 
     @media only screen and (max-width: 768px) {
+        .portfolio-widget__projects-container{
+            width: 90%;
+        }
+        .portfolio-widget__projects-container .project-container {
+            flex-basis: 100%;
+        }
         .navigation-menu__container .navigation-menu__nav {
            flex-basis: 90%;
         }
         .introducingWidget__container .introducingWidget__social-media-container .social-media__list {
             width: 90%;
+        }
+
+        .timeline__container {
+            padding: 25px 10%;
         }
     }

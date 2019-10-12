@@ -7,7 +7,9 @@ const NavigationMenu = () => (
                 Acerca de mi
             </li>
             <li>
-                Portafolio
+                <a href="#portfolio-widget__container">
+                    Portafolio
+                </a>
             </li>
         </ul>
         <div className="navigation-menu__contact-container">

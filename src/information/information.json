@@ -1,0 +1,40 @@
+{
+    "experience": [
+        {
+            "date": "Oct 2017 - Actual",
+            "name": "Magno Technology",
+            "position": "FullStack Developer",
+            "description": "",  
+            "technologies": ["React", "NextJS", "NodeJS", "Java", "CSS", "Sass", "JavaScript", "Webpack", "Git / github"],
+            "specialism": ["Performance", "Cache", "Integración", "UI/UX", "API", "FrontEnd"],
+            "images": []
+        },
+        {
+            "date": "Ene 2017 - Jun 2017",
+            "name": "Volkswagen México",
+            "position": "Practicante nacional",
+            "description": "",  
+            "technologies": ["HTML", "CSS", "Java", "JavaScript", "Excel"],
+            "specialism": ["Análisis de requerimientos", "Documentación", "Atención al cliente"],
+            "images": []
+        },
+        {
+            "date": "Feb 2016 - Ene 2017",
+            "name": "EvolutionCard",
+            "position": "Coordinador de soluciones IT",
+            "description": "",  
+            "technologies": ["HTML", "CSS", "JavaScript", "Php", "Mysql"],
+            "specialism": ["Análisis de requerimientos", "Automatización de procesos"],
+            "images": []
+        },
+        {
+            "date": "Ago 2015- Jul 2016",
+            "name": "Instituto Tecnológico de Veracruz",
+            "position": "Desarrollador",
+            "description": "",  
+            "technologies": ["C", "C++", "OpenGL"],
+            "specialism": ["Investigación"],
+            "images": []
+        }
+    ]
+}
