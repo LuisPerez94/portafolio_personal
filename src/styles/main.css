@@ -1,0 +1,73 @@
+/** Archivo principal de estilos */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Div contenedor principal de la aplicación */
+.main-container {
+    height: 100vh;
+}
+
+.introducingWidget__container {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.introducingWidget__container .introducingWidget__user-img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.introducingWidget__container .introducingWidget__title {
+    margin-bottom: 10px;
+}
+.introducingWidget__container .introducingWidget__short-description {
+    margin-bottom: 10px;
+}
+
+.introducingWidget__container .introducingWidget__social-media-container {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.introducingWidget__container .introducingWidget__social-media-container .social-media__list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.introducingWidget__container .introducingWidget__social-media-container .social-media__list li {
+    flex: 1;
+}
+
+.social-media__list li a i {
+    font-size: 50px;
+    color: #ccc;
+}
+
+.social-media__list li a i:hover {
+    color: #181818;
+    animation: bounce 1s;
+}
+
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+    transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-20px);
+    }
+    60% {
+    transform: translateY(-12px);
+    }
+    }
