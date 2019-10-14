@@ -11,6 +11,9 @@ const NavigationMenu = () => (
                     Portafolio
                 </a>
             </li>
+            <li>
+                <a href="CVLUISPEREZ.pdf" download>Descarga mi CV</a>
+            </li>
         </ul>
         <div className="navigation-menu__contact-container">
             <a href="mailto:luisemp9426@gmail.com">Contactame</a>

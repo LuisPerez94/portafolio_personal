@@ -4,16 +4,20 @@
             "date": "Oct 2017 - Actual",
             "name": "Magno Technology",
             "position": "FullStack Developer",
-            "description": "",  
+            "description": ["Desarrollador implementador del backend con el fronted de los clientes de la empresa",
+                "Creación de Demos de E-commerce para futuros clientes. Proyectos de Ecommerce con plataformas de IBM",
+                "Capacitación de clientes en las herramientas de gestión de su tienda"],
             "technologies": ["React", "NextJS", "NodeJS", "Java", "CSS", "Sass", "JavaScript", "Webpack", "Git / github"],
-            "specialism": ["Performance", "Cache", "Integración", "UI/UX", "API", "FrontEnd"],
+            "specialism": ["E-commerce", "Performance", "Cache", "Integración", "UI/UX", "API", "FrontEnd"],
             "images": []
         },
         {
             "date": "Ene 2017 - Jun 2017",
             "name": "Volkswagen México",
             "position": "Practicante nacional",
-            "description": "",  
+            "description": ["Análisis de requerimientos para la implementación de un sistema a nivel planta" , 
+                "Creación e implementación de un sistema de facturación web para mi gerencia",
+                "Automatización de tareas administrativas y de oficina."],  
             "technologies": ["HTML", "CSS", "Java", "JavaScript", "Excel"],
             "specialism": ["Análisis de requerimientos", "Documentación", "Atención al cliente"],
             "images": []
@@ -22,7 +26,11 @@
             "date": "Feb 2016 - Ene 2017",
             "name": "EvolutionCard",
             "position": "Coordinador de soluciones IT",
-            "description": "",  
+            "description": [
+                "Consultor de soluciones IT para los procesos internos de la empresa",
+                "Diseñador Jr. usando herramientas como Photoshop y CorelDraw.",
+                "Automatización de tareas con estas herramientas, creando credenciales y publicidad",
+                "Desarrollo e implementación de un sistema administrativo web para la empresa."],  
             "technologies": ["HTML", "CSS", "JavaScript", "Php", "Mysql"],
             "specialism": ["Análisis de requerimientos", "Automatización de procesos"],
             "images": []
@@ -31,7 +39,8 @@
             "date": "Ago 2015- Jul 2016",
             "name": "Instituto Tecnológico de Veracruz",
             "position": "Desarrollador",
-            "description": "",  
+            "description": [
+                "Desarrollo e implementación de un sistema de particulas para los ingenieros del laboratorio de mecánica. El sistema fue escrito en C++ usando la libreria de renderizado OpenGl. Fue posible tener una herramienta visual y en tiempo real de simulaciones de fluidos."],  
             "technologies": ["C", "C++", "OpenGL"],
             "specialism": ["Investigación"],
             "images": []
