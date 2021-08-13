@@ -12,7 +12,7 @@ const NavigationMenu = () => (
                 </a>
             </li>
             <li>
-                <a href="CVLUISPEREZ.pdf" download>Descarga mi CV</a>
+                <a href="public/CVLUISPEREZ.pdf" download>Descarga mi CV</a>
             </li>
         </ul>
         <div className="navigation-menu__contact-container">

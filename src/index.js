@@ -46,7 +46,7 @@ class Welcome extends React.Component {
           <IntroducingWidget
             userImgSrc={userData.avatar_url}
             userName="Luis Pérez"
-            shortDescription="Desarrollador FullStack | Consultor de E-commerce | En Pro de la vida saludable"
+            shortDescription="FullStack Developer | AWS Cloud Developer | Pro Healthy Life"
             githubUrl={userData.html_url}
             linkedinUrl="https://www.linkedin.com/in/luis-%C3%A1ngel-p%C3%A9rez-mu%C3%B1oz-a9630455/"
             youtubeUrl=""
