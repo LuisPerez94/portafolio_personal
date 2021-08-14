@@ -1,7 +1,16 @@
 {
     "experience": [
         {
-            "date": "Oct 2017 - Actual",
+            "date": "Dic 2019 - Actual",
+            "name": "Grupo Siayec",
+            "position": "FullStack Developer",
+            "description": ["Diseño de la infraestructura e implementación de la plataforma utilizando ReactJS. Y material ui como framework de diseño. Esta plataforma utiliza diferentes apis para las necesidades del proyecto como, cámara, lector de qr, funcionalidad offline. El backed de la aplicación está construido con microservicios utilizando los productos de la nube de AWS. Se utiliza, por ejemplo, dynamodb, appsync, s3, api gateway, lambda, sqs, sns. Participación en todos los procesos de desarrollo de la herramienta, así como propuestas de mejora y optimización de lo ya desarrollado. Creación de la aplicación móvil con capacitor y posteriormente migración a react native para mejorar la compatibilidad de la aplicación."],
+            "technologies": ["JavaScript/React", "NodeJS", "AWS", "CSS/Sass", "MaterialUI", "React Native", "Git / gitlab"],
+            "specialism": ["Cloud", "DynamoDB", "AWS Lambda", "AppSync", "S3", "API GATEWAY", "SQS", "SNS", "CloudFormation"],
+            "images": []
+        },
+        {
+            "date": "Oct 2017 - 2019",
             "name": "Magno Technology",
             "position": "FullStack Developer",
             "description": ["Desarrollador implementador del backend con el fronted de los clientes de la empresa",

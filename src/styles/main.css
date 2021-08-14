@@ -40,12 +40,12 @@
     align-content: space-between;
     align-items: center;
     flex: 1;
-    flex-basis: 30%;
+    flex-basis: 75%;
 }
 
 .navigation-menu__container .navigation-menu__contact-container {
     flex: 1;
-    flex-basis: 70%;
+    flex-basis: 25%;
     text-align: right;
 }
 
@@ -68,6 +68,10 @@
     margin: 25px 0;
     text-align: center;
     padding: 0 10%;
+}
+
+.about-me__container a{
+    color: white;
 }
 
 .portfolio-widget__container {
@@ -132,7 +136,9 @@
 }
 
 .timeline__container {
-    padding: 25px 20%;
+    padding: 25px 10%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .timeline__section-container {
@@ -284,6 +290,7 @@
     padding: 25px 10%;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -291,6 +298,14 @@
     flex: 1;
     text-align: right;
 }
+
+@media only screen and (max-width: 600px) {
+    .introducingWidget__container .img-container{
+        text-align: center;
+    }
+}
+
+
 .introducingWidget__container .info-container {
     flex: 2;
     text-align: center;

@@ -3,10 +3,11 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 const TimelineWidget = ({ timelineTitle, timelineInfoList = [] }) => (
-  <div className="timeline__container">
+  <>
     <Fade left>
       <h2 className="timeline__title">{timelineTitle}</h2>
     </Fade>
+  <div className="timeline__container" id="timeline-widget__container">
     <div className="timeline__sections-container">
       {timelineInfoList.map(section => (
         <Fade up>
@@ -45,6 +46,7 @@ const TimelineWidget = ({ timelineTitle, timelineInfoList = [] }) => (
       ))}
     </div>
   </div>
+  </>
 );
 
 export default TimelineWidget;

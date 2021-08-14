@@ -12,6 +12,11 @@ const NavigationMenu = () => (
                 </a>
             </li>
             <li>
+                <a href="#timeline-widget__container">
+                    Experiencia Laboral
+                </a>
+            </li>
+            <li>
                 <a href="public/CVLUISPEREZ.pdf" download>Descarga mi CV</a>
             </li>
         </ul>

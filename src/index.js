@@ -58,6 +58,7 @@ class Welcome extends React.Component {
           <div className="about-me__container">
             <h2>Acerca de mi</h2>
             <p>{userData.bio}</p>
+            <p>En mis ratos libres soy fundador y lider de desarrollo en <a target="_blank" href="https://academio.com.mx">academio.com.mx</a></p>
           </div>
           <hr />
           <PortfolioWidget reposArray={repos} />
