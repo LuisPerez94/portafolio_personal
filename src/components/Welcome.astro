@@ -1,7 +1,233 @@
 ---
+import { Icon } from 'astro-icon/components';
+import FloatingSquares from './FloatingSquares.astro';
 
+interface SocialLink {
+    url: string;
+    icon: string;
+    label: string;
+}
+
+const socialLinks: SocialLink[] = [
+    {
+        url: "https://github.com/LuisPerez94",
+        icon: "mdi:github",
+        label: "Github"
+    },
+    {
+        url: "https://www.linkedin.com/in/luis-%C3%A1ngel-p%C3%A9rez-mu%C3%B1oz-a9630455/",
+        icon: "mdi:linkedin",
+        label: "LinkedIn"
+    },
+    {
+        url: "https://twitter.com/Mim0Perez",
+        icon: "mdi:twitter",
+        label: "Twitter"
+    },
+    {
+        url: "https://es.stackoverflow.com/users/31409/luis?tab=profile",
+        icon: "mdi:stack-overflow",
+        label: "Stack Overflow"
+    },
+    {
+        url: "https://www.instagram.com/mimoperez/?hl=es-la",
+        icon: "mdi:instagram",
+        label: "Instagram"
+    }
+];
+
+const userData = await fetch('https://api.github.com/users/LuisPerez94');
+const userDataJson = await userData.json();
 ---
 
-<div id="container">
-	
+<div class="relative">
+    <FloatingSquares />
+    <div class="container mx-auto px-6 min-h-[90vh] flex items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-5xl font-bold text-white">
+                        Hola, me llamo <span class="text-[#95BF47]">Luis Pérez</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        FullStack Developer | AWS Cloud Developer | Pro Healthy Life
+                    </p>
+                </div>
+
+                <div class="prose prose-invert">
+                    <p class="text-gray-300 leading-relaxed">
+                        Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras. 
+                        Me especializo en el desarrollo web moderno y arquitecturas cloud, con un fuerte enfoque en AWS.
+                    </p>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="mailto:luisemp9426@gmail.com" 
+                       class="px-6 py-3 bg-[#95BF47] text-white rounded-full hover:bg-[#95BF47]/80 transition-colors inline-flex items-center gap-2">
+                        <Icon name="mdi:email" class="w-5 h-5" />
+                        Contáctame
+                    </a>
+                    <a href="/CVLUISPEREZ.pdf" download 
+                       class="px-6 py-3 bg-white/10 text-white rounded-full hover:bg-white/20 transition-colors inline-flex items-center gap-2">
+                        <Icon name="mdi:download" class="w-5 h-5" />
+                        Descargar CV
+                    </a>
+                </div>
+
+                <div class="flex gap-4">
+                    {socialLinks.map(link => (
+                        <a href={link.url} 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="text-gray-400 hover:text-[#95BF47] transition-colors"
+                           title={link.label}>
+                            <Icon name={link.icon} class="w-8 h-8" />
+                        </a>
+                    ))}
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-center">
+                <div class="relative w-[400px] h-[400px] flex items-center justify-center">
+
+                    <div class="orbit orbit-1"></div>
+                    <div class="orbit orbit-2"></div>
+                    <div class="orbit orbit-3"></div>
+                    <div class="orbit orbit-4"></div>
+
+                    <div class="tech-icon tech-1">
+                        <img src="/html.png" alt="HTML" class="w-10 h-10" />
+                    </div>
+                    <div class="tech-icon tech-2">
+                        <img src="/css.png" alt="CSS" class="w-10 h-10" />
+                    </div>
+                    <div class="tech-icon tech-3">
+                        <img src="/js.png" alt="JavaScript" class="w-10 h-10" />
+                    </div>
+                    <div class="tech-icon tech-4">
+                        <img src="/shopify.png" alt="Shopify" class="w-10 h-10" />
+                    </div>
+
+                    <div class="relative z-10 w-[250px] h-[250px] rounded-full overflow-hidden bg-gradient-to-br from-[#95BF47]/20 to-[#95BF47]/5">
+
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900">
+                                <img src={userDataJson.avatar_url} alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                        
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#95BF47]/10 to-transparent opacity-60"></div>
+                        <div class="absolute -inset-0.5 bg-gradient-to-tr from-[#95BF47]/20 to-transparent opacity-20 blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(149, 191, 71, 0.2);
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    animation: orbit-rotation 20s linear infinite;
+}
+
+.orbit-1 { width: 300px; height: 300px; }
+.orbit-2 { width: 350px; height: 350px; }
+.orbit-3 { width: 400px; height: 400px; }
+.orbit-4 { width: 450px; height: 450px; }
+
+/* Rotación de las órbitas en diferentes ángulos */
+.orbit-1 { transform: rotateX(65deg) rotateY(10deg); }
+.orbit-2 { transform: rotateX(70deg) rotateY(15deg); }
+.orbit-3 { transform: rotateX(75deg) rotateY(20deg); }
+.orbit-4 { transform: rotateX(80deg) rotateY(25deg); }
+
+.tech-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transform-style: preserve-3d;
+}
+
+.tech-1 {
+    animation: tech-orbit-1 15s linear infinite;
+}
+
+.tech-2 {
+    animation: tech-orbit-2 20s linear infinite;
+}
+
+.tech-3 {
+    animation: tech-orbit-3 25s linear infinite;
+}
+
+.tech-4 {
+    animation: tech-orbit-4 30s linear infinite;
+}
+
+@keyframes orbit-rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes tech-orbit-1 {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+@keyframes tech-orbit-2 {
+    from {
+        transform: rotate(90deg) translateX(175px) rotate(-90deg);
+    }
+    to {
+        transform: rotate(450deg) translateX(175px) rotate(-450deg);
+    }
+}
+
+@keyframes tech-orbit-3 {
+    from {
+        transform: rotate(180deg) translateX(200px) rotate(-180deg);
+    }
+    to {
+        transform: rotate(540deg) translateX(200px) rotate(-540deg);
+    }
+}
+
+@keyframes tech-orbit-4 {
+    from {
+        transform: rotate(270deg) translateX(225px) rotate(-270deg);
+    }
+    to {
+        transform: rotate(630deg) translateX(225px) rotate(-630deg);
+    }
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+    background: rgba(149, 191, 71, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tech-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+</style>

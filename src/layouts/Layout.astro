@@ -1,3 +1,7 @@
+---
+import "../styles/global.css";
+import FloatingSquares from '../components/FloatingSquares.astro';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,11 +12,15 @@
 		<title>Luisdev</title>
 	</head>
 	<body>
+		<FloatingSquares />
 		<slot />
 	</body>
 </html>
 
 <style>
+	html{
+  		font-family: 'Poppins', sans-serif;
+	}
 	html,
 	body {
 		margin: 0;
@@ -20,5 +28,7 @@
 		height: 100%;
 		background: rgb(3 7 30);
 		background-image: radial-gradient(ellipse 80% 90% at 50% -20%, #000868, #ffffff00);
+		background-attachment: fixed;
+		overflow-x: hidden;
 	}
 </style>
